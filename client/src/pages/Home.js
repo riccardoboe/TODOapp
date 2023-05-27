@@ -10,7 +10,7 @@ function Home() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:4000/todos", { withCredentials: true })
+      .get("https://todo-app-kidg.onrender.com/todos", { withCredentials: true })
       .then((response) => {
         setTodos(response.data);
       });
@@ -21,7 +21,7 @@ function Home() {
     e.preventDefault();
     axios
       .put(
-        "http://localhost:4000/todos",
+        "https://todo-app-kidg.onrender.com/todos",
         { text: inputVal },
         { withCredentials: true }
       )
@@ -35,7 +35,7 @@ function Home() {
   function updateTodo(todo) {
     const data = { id: todo._id, done: !todo.done };
     axios
-      .post("http://localhost:4000/todos", data, { withCredentials: true })
+      .post("https://todo-app-kidg.onrender.com/todos", data, { withCredentials: true })
       .then(() => {
         const newTodos = todos.map((t) => {
           if (t._id === todo._id) {

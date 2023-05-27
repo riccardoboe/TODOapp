@@ -15,7 +15,7 @@ function App() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:4000/user", { withCredentials: true })
+      .get("https://todo-app-kidg.onrender.com/user", { withCredentials: true })
       .then((response) => {
         setEmail(response.data.email);
       });
@@ -23,7 +23,7 @@ function App() {
 
   function logout() {
     axios
-      .post("http://localhost:4000/logout", {}, { withCredentials: true })
+      .post("https://todo-app-kidg.onrender.com/logout", {}, { withCredentials: true })
       .then(() => setEmail(""));
   }
 
