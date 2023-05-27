@@ -8,7 +8,7 @@ import cors from "cors";
 import jwt from "jsonwebtoken";
 import Todo from "./models/Todo.js";
 
-const secret = "secret123";
+const secret = process.env.JWT_PASSWORD;
 import dotenv from "dotenv";
 dotenv.config();
 
