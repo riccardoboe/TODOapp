@@ -1,0 +1,49 @@
+.app-navbar {
+  width: 100%;
+  display: flex;
+  background: transparent;
+  box-shadow: 0 5px 20px rgb(0 0 0 / 0.3);
+  /* border-bottom: 3px solid var(--secondary-text); */
+}
+
+.navbar-links {
+  text-decoration: none;
+  color: var(--text);
+  font-size: 1.2rem;
+  margin-top: 5px;
+  display: inline-block;
+  padding: 15px;
+  transition: 0.5s ease;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+@media only screen and (max-width: 600px) {
+  .navbar-links {
+    margin-top: 12.5px;
+    font-size: 1rem;
+  }
+}
+
+.navlink:hover .navbar-links {
+  opacity: 0.5;
+  filter: blur(4px);
+}
+
+.navlink .navbar-links:hover {
+  opacity: 1;
+  filter: blur(0px);
+  transform: scale(1.02);
+}
+
+.navbar-logo img {
+  height: 50px;
+  width: 50px;
+  object-position: left bottom;
+  transition: 0.3s ease;
+  padding: 10px;
+}
+.navbar-logo img:hover {
+  transform: scale(1.1);
+  filter: blur(0.5px);
+}

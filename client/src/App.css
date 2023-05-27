@@ -1,0 +1,252 @@
+.register {
+  height: 100%;
+  width: 100%;
+}
+
+.register h1 {
+  display: flex;
+  justify-content: center;
+  color: var(--highlight);
+}
+
+.register-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.register-form {
+  background: var(--secondary-background);
+  padding: 2rem 4rem;
+  display: flex;
+  flex-direction: column;
+  color: var(--text);
+  box-shadow: 0 5px 20px rgb(0 0 0 / 0.3);
+  border-radius: 15px;
+}
+
+.register-form input {
+  margin: 15px 0;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.05);
+  padding: 15px;
+  border: none;
+  box-shadow: 0 5px 20px rgb(0 0 0 / 0.2);
+  color: var(--text);
+}
+
+.register-form input:focus {
+  background: transparent;
+}
+
+.register-form input::placeholder {
+  color: var(--secondary-text);
+}
+
+.register-form button {
+  margin: 20px 0;
+  border-radius: 5px;
+  transition: 0.3s ease;
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 10px;
+  background: transparent;
+  border: none;
+  box-shadow: 0 5px 20px rgb(0 0 0 / 0.2);
+  color: var(--text);
+}
+
+.register-form button:hover {
+  transform: scale(1.05);
+  border: 2px solid var(--highlight);
+}
+
+.user-status {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  font-weight: bold;
+  text-align: center;
+  line-height: 100px;
+  font-size: 1.3rem;
+}
+
+.check-user button {
+  margin: 20px 0;
+  border-radius: 5px;
+  transition: 0.3s ease;
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 10px;
+  background: transparent;
+  border: none;
+  box-shadow: 0 5px 20px rgb(0 0 0 / 0.2);
+  color: var(--text);
+}
+
+.check-user button:hover {
+  transform: scale(1.05);
+}
+
+.note {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 1.2rem;
+  color: var(--text);
+}
+
+.note span {
+  font-weight: bold;
+  color: var(--highlight);
+}
+
+.welcome-container {
+  height: 100%;
+  width: 100%;
+  color: var(--text);
+}
+
+.welcome-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 200px;
+}
+
+.welcome-wrapper img {
+  border-radius: 15px;
+}
+
+.welcome-wrapper span {
+  font-weight: bold;
+}
+
+.welcome-left {
+  flex: 1;
+}
+
+.welcome-right {
+  flex: 1;
+  text-align: center;
+}
+
+.welcome-right .p2 {
+  margin-bottom: 50px;
+}
+
+.welcome-container .button {
+  margin: 20px 10px;
+  border-radius: 5px;
+  transition: 0.3s ease;
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 15px;
+  background: transparent;
+  border: none;
+  box-shadow: 0 5px 20px rgb(0 0 0 / 0.2);
+  color: var(--text);
+}
+
+.welcome-container .button:hover {
+  transform: scale(1.05);
+  border: 2px solid var(--highlight);
+}
+
+.home-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.home-wrapper {
+  width: 800px;
+  padding: 15px;
+  margin: 10px;
+  background-color: var(--secondary-background);
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgb(0 0 0 / 0.3);
+  font-size: 1rem;
+}
+
+.home-wrapper input {
+  background: transparent;
+  border: none;
+  color: var(--text);
+  padding: 10px 0;
+  width: auto;
+}
+
+.addtodo-input input {
+  width: 100%;
+  box-shadow: 0 5px 20px rgb(0 0 0 / 0.2);
+}
+
+.home-wrapper form {
+  display: block;
+}
+
+.home-wrapper input::placeholder {
+  color: var(--text);
+}
+
+.home-wrapper input:focus {
+  outline: none;
+}
+
+.home-wrapper ul {
+  list-style-type: none;
+}
+.home-wrapper ul li {
+  margin-bottom: 15px;
+}
+
+.home-wrapper ul li input:checked {
+  accent-color: var(--background);
+}
+.error {
+  font-size: 13px;
+}
+@media only screen and (max-width: 600px) {
+  .welcome-wrapper {
+    margin-top: 100px;
+    line-height: 2rem;
+    display: inline;
+    font-size: 1.2rem;
+    text-align: center;
+
+  }
+
+  .welcome-wrapper img {
+    height: 120px;
+    width: 200px;
+    margin-bottom: -50px;
+  }
+
+  .welcome-wrapper h1,
+  .p {
+    display: none;
+  }
+
+  .welcome-container .button {
+    display: none;
+  }
+
+  .user-status {
+    margin-bottom: -80px;
+  }
+
+  .check-user {
+    margin-top: -50px;
+    font-size: 1rem;
+  }
+  .register h1 {
+    display: none;
+  }
+  .register-wrapper {
+    margin-top: 100px;
+  }
+}

@@ -1,0 +1,30 @@
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  letter-spacing: .19rem;
+  color: var(--text);
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(
+      243deg,
+      rgba(11, 48, 40, 1) 0%,
+      rgba(25, 82, 72, 1) 50%,
+      rgba(11, 48, 40, 1) 100%
+    )
+    fixed;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+:root {
+  --background: #195248;
+  --secondary-background: #05211C;
+  --text: #fdffff;
+  --secondary-text: #c3caca;
+  --highlight: #fff;
+}
